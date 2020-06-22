@@ -1,0 +1,32 @@
+@import "src/styles/core/vars";
+@import "src/styles/core/mixins";
+
+.card {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid $colorContent;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 285px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate3d(-50%, -50%, 0);
+  width: auto;
+  height: 100%;
+}
+
+.buttonUpdate,
+.buttonDelete {
+  width: 100%;
+  margin-top: 10px;
+}

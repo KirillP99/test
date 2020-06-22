@@ -1,0 +1,11 @@
+@import "src/styles/core/vars";
+@import "src/styles/core/mixins";
+
+.content {
+  position: absolute;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid $colorContent;
+  border-radius: 5px;
+  z-index: 100;
+}
