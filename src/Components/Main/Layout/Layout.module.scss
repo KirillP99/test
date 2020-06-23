@@ -1,0 +1,108 @@
+@import "src/styles/core/vars";
+@import "src/styles/core/mixins";
+
+.notFoundText {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
+
+.notFoundText {
+  margin-left: -132.5px;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.openPopupButton {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 100px;
+}
+
+.cardWrapper {
+  width: 20.52%;
+  margin-right: 54px;
+  margin-bottom: 20px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 1024px;
+  }
+
+  .cardWrapper {
+    width: 21.52%;
+    margin-right: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+
+  .cardWrapper {
+    width: 28.52%;
+    margin-right: 22px;
+
+    &:nth-child(4n) {
+      margin-right: 22px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+
+  .cardWrapper {
+    width: 42%;
+    margin-right: 32px;
+
+    &:nth-child(3n) {
+      margin-right: 32px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 320px;
+  }
+
+  .cardWrapper {
+    width: 100%;
+    margin-right: 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
