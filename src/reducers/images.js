@@ -1,7 +1,7 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialValue = {
-  images: null,
+  images: [],
   isDataReceived: false,
   isFetch: false,
   error: null,

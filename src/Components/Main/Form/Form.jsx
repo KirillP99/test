@@ -34,7 +34,8 @@ const Form = ({ popupContent, closePopup }) => {
 
   const onSubmit = () => {
     const body = {
-      id: popupContent ? popupContent.id : images[images.length - 1].id + 1,
+      id: popupContent && popupContent.id
+        || images.length && images[images.length - 1].id + 1 || 1,
       src: file,
       tooltip: {
         text,

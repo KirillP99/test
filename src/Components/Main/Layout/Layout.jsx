@@ -8,7 +8,7 @@ import styles from './Layout.module.scss';
 
 const Layout = ({ images, openPopup }) => (
   <div className={styles.container}>
-    {images && !!images.length ? (
+    {images.length ? (
       <div className={styles.cards}>
         {images.map((item) => (
           <ImageCard key={item.id} item={item} classNameWrapper={styles.cardWrapper} />
